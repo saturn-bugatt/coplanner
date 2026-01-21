@@ -1,0 +1,22 @@
+{
+  "teams": [
+    {
+      "id": "grokathon",
+      "name": "Grokathon",
+      "repo": "https://github.com/bugattmark/grokathon",
+      "track": 1
+    },
+    {
+      "id": "marionette",
+      "name": "Marionette",
+      "repo": "https://github.com/bugattmark/marionette",
+      "track": 2
+    },
+    {
+      "id": "inspired-search",
+      "name": "InspiredSearch",
+      "repo": "https://github.com/bugattmark/InspiredSearch",
+      "track": 1
+    }
+  ]
+}

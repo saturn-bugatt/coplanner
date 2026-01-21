@@ -1,0 +1,118 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --saturn-blue: #1a56db;
+  --saturn-blue-hover: #1e40af;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --border-color: #e5e7eb;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --success: #22c55e;
+  --warning: #3b82f6;
+  --error: #ef4444;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-color);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Status indicators */
+.status-dot {
+  @apply inline-block w-2 h-2 rounded-full mr-2;
+}
+
+.status-completed {
+  @apply bg-green-500;
+}
+
+.status-in-progress {
+  @apply bg-blue-500;
+}
+
+.status-failed {
+  @apply bg-red-500;
+}
+
+/* Track badges */
+.track-badge {
+  @apply px-2 py-0.5 rounded text-xs font-medium;
+}
+
+.track-1 {
+  @apply bg-blue-50 text-blue-700;
+}
+
+.track-2 {
+  @apply bg-purple-50 text-purple-700;
+}
+
+/* Table styles */
+.leaderboard-table {
+  @apply w-full;
+}
+
+.leaderboard-table th {
+  @apply text-left text-sm font-medium text-gray-500 py-3 px-4 border-b border-gray-200;
+}
+
+.leaderboard-table td {
+  @apply py-4 px-4 border-b border-gray-100 text-sm;
+}
+
+.leaderboard-table tr:hover {
+  @apply bg-gray-50;
+}
+
+/* Score cells */
+.score-cell {
+  @apply text-center font-medium;
+}
+
+.score-high {
+  @apply text-green-600;
+}
+
+.score-medium {
+  @apply text-yellow-600;
+}
+
+.score-low {
+  @apply text-gray-400;
+}
