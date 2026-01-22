@@ -142,3 +142,4 @@ Analyze a single team's repo:
   "track": 1
 }
 ```
+# Deployed via Vercel
