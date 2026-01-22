@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
 export default function Sidebar() {
@@ -10,7 +11,13 @@ export default function Sidebar() {
     <aside className="sidebar flex flex-col">
       {/* Logo */}
       <div className="p-4 border-b border-gray-200">
-        <span className="saturn-logo">SATURN</span>
+        <Image
+          src="/saturn-logo.svg"
+          alt="Saturn"
+          width={100}
+          height={18}
+          priority
+        />
       </div>
 
       {/* Navigation */}
@@ -35,16 +42,6 @@ export default function Sidebar() {
           <span>Redeem Code</span>
         </Link>
       </nav>
-
-      {/* Footer */}
-      <div className="border-t border-gray-200 p-4">
-        <div className="flex items-center gap-3">
-          <div className="avatar">
-            <span>H</span>
-          </div>
-          <span className="text-sm text-gray-600">Hackathon</span>
-        </div>
-      </div>
     </aside>
   );
 }

@@ -12,12 +12,8 @@ export default function Leaderboard({ scores }: LeaderboardProps) {
   return (
     <div className="flex-1 bg-white">
       {/* Page header */}
-      <div className="page-header flex items-center justify-between">
+      <div className="page-header">
         <h1 className="page-title">Leaderboard</h1>
-        <button className="btn-primary">
-          <span>+</span>
-          <span>Add Team</span>
-        </button>
       </div>
 
       {/* Tabs */}
