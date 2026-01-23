@@ -3,11 +3,10 @@
 import { useState, useEffect, useCallback } from 'react';
 import Sidebar from '@/components/Sidebar';
 import Leaderboard from '@/components/Leaderboard';
-import { TeamScore } from '@/lib/rubric';
+import { Score } from '@/lib/supabase';
 
 interface LeaderboardData {
-  scores: TeamScore[];
-  commentary: { message: string; timestamp: string }[];
+  scores: Score[];
   lastRefresh: string;
 }
 
@@ -16,7 +15,6 @@ const REFRESH_INTERVAL = 60000;
 export default function Home() {
   const [data, setData] = useState<LeaderboardData>({
     scores: [],
-    commentary: [],
     lastRefresh: new Date().toISOString(),
   });
   const [isLoading, setIsLoading] = useState(true);

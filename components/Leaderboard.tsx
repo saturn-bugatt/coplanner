@@ -1,9 +1,9 @@
 'use client';
 
-import { TeamScore } from '@/lib/rubric';
+import { Score } from '@/lib/supabase';
 
 interface LeaderboardProps {
-  scores: TeamScore[];
+  scores: Score[];
 }
 
 export default function Leaderboard({ scores }: LeaderboardProps) {
@@ -54,12 +54,12 @@ export default function Leaderboard({ scores }: LeaderboardProps) {
         <tbody>
           {sortedScores.length > 0 ? (
             sortedScores.map((score, index) => (
-              <LeaderboardRow key={score.teamId} score={score} rank={index + 1} />
+              <LeaderboardRow key={score.id} score={score} rank={index + 1} />
             ))
           ) : (
             <tr>
               <td colSpan={10} className="text-center py-12 text-gray-400">
-                No teams yet. Add a team to get started.
+                No teams yet. Run the analysis script to get started.
               </td>
             </tr>
           )}
@@ -69,7 +69,7 @@ export default function Leaderboard({ scores }: LeaderboardProps) {
   );
 }
 
-function LeaderboardRow({ score, rank }: { score: TeamScore; rank: number }) {
+function LeaderboardRow({ score, rank }: { score: Score; rank: number }) {
   const getStatusInfo = (total: number) => {
     if (total >= 12) return { label: 'Excellent', dotClass: 'green' };
     if (total >= 9) return { label: 'Good', dotClass: 'green' };
@@ -80,15 +80,15 @@ function LeaderboardRow({ score, rank }: { score: TeamScore; rank: number }) {
 
   const status = getStatusInfo(score.total);
 
-  const formattedDate = score.lastUpdated
-    ? new Date(score.lastUpdated).toLocaleDateString('en-GB', {
+  const formattedDate = score.last_updated
+    ? new Date(score.last_updated).toLocaleDateString('en-GB', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric'
       })
     : '-';
 
-  const initials = score.teamName
+  const initials = score.team_name
     .split(' ')
     .map(word => word[0])
     .join('')
@@ -107,7 +107,7 @@ function LeaderboardRow({ score, rank }: { score: TeamScore; rank: number }) {
             rel="noopener noreferrer"
             className="text-gray-900 hover:text-blue-600"
           >
-            {score.teamName}
+            {score.team_name}
           </a>
         </div>
       </td>

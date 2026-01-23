@@ -1,20 +1,26 @@
 import { NextResponse } from 'next/server';
-import { getScores, getCommentary } from '@/lib/storage';
+import { createClient } from '@supabase/supabase-js';
 
 export const dynamic = 'force-dynamic';
 
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
+
 export async function GET() {
   try {
-    const [scores, commentary] = await Promise.all([
-      getScores(),
-      getCommentary(5)
-    ]);
+    const { data: scores, error } = await supabase
+      .from('scores')
+      .select('*')
+      .order('total', { ascending: false });
+
+    if (error) throw error;
 
     return NextResponse.json({
       success: true,
       data: {
-        scores,
-        commentary,
+        scores: scores || [],
         lastRefresh: new Date().toISOString()
       }
     });
