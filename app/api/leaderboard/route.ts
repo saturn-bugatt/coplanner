@@ -2,6 +2,7 @@ import { NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
 export const dynamic = 'force-dynamic';
+export const revalidate = 0;
 
 const LOG_PREFIX = '[API/leaderboard]';
 
@@ -24,10 +25,9 @@ export async function GET() {
     }
 
     console.log(`${LOG_PREFIX} [${requestId}] Initializing Supabase client`);
-    const supabase = createClient(
-      process.env.NEXT_PUBLIC_SUPABASE_URL!,
-      process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-    );
+    const supabaseUrl = (process.env.NEXT_PUBLIC_SUPABASE_URL || '').trim();
+    const supabaseKey = (process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '').trim();
+    const supabase = createClient(supabaseUrl, supabaseKey);
 
     console.log(`${LOG_PREFIX} [${requestId}] Executing Supabase query: SELECT * FROM scores ORDER BY total DESC`);
     const queryStartTime = Date.now();
@@ -75,7 +75,13 @@ export async function GET() {
     };
 
     console.log(`${LOG_PREFIX} [${requestId}] Response sent successfully - ${resultsCount} scores returned`);
-    return NextResponse.json(response);
+    return NextResponse.json(response, {
+      headers: {
+        'Cache-Control': 'no-store, no-cache, must-revalidate, proxy-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+      }
+    });
 
   } catch (error) {
     const errorMessage = error instanceof Error ? error.message : 'Unknown error';

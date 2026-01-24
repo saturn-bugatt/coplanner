@@ -1,106 +1,118 @@
 import { TeamScore } from './rubric';
-import * as fs from 'fs';
-import * as path from 'path';
+import { createClient } from '@supabase/supabase-js';
+import { v5 as uuidv5 } from 'uuid';
 
-// In-memory cache for development and serverless
-let cachedScores: TeamScore[] = [];
+// Namespace for generating consistent UUIDs from team names
+const TEAM_UUID_NAMESPACE = '6ba7b810-9dad-11d1-80b4-00c04fd430c8';
+
+// Generate a consistent UUID from team ID string
+function teamIdToUUID(teamId: string): string {
+  return uuidv5(teamId, TEAM_UUID_NAMESPACE);
+}
+
+// Initialize Supabase client with service role key for write operations
+const supabaseUrl = (process.env.NEXT_PUBLIC_SUPABASE_URL || '').trim();
+const supabaseKey = (process.env.SUPABASE_SERVICE_ROLE_KEY || process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '').trim();
+const supabase = createClient(supabaseUrl, supabaseKey);
+
+// In-memory cache for commentary
 let cachedCommentary: { message: string; timestamp: string }[] = [];
 
-const DATA_DIR = path.join(process.cwd(), '.data');
-const SCORES_FILE = path.join(DATA_DIR, 'scores.json');
-const COMMENTARY_FILE = path.join(DATA_DIR, 'commentary.json');
-
-// Ensure data directory exists
-function ensureDataDir() {
-  if (!fs.existsSync(DATA_DIR)) {
-    fs.mkdirSync(DATA_DIR, { recursive: true });
-  }
-}
-
-// Load scores from file
-function loadScoresFromFile(): TeamScore[] {
-  try {
-    ensureDataDir();
-    if (fs.existsSync(SCORES_FILE)) {
-      const data = fs.readFileSync(SCORES_FILE, 'utf-8');
-      return JSON.parse(data);
-    }
-  } catch (error) {
-    console.error('Error loading scores from file:', error);
-  }
-  return [];
-}
-
-// Save scores to file
-function saveScoresToFile(scores: TeamScore[]) {
-  try {
-    ensureDataDir();
-    fs.writeFileSync(SCORES_FILE, JSON.stringify(scores, null, 2));
-  } catch (error) {
-    console.error('Error saving scores to file:', error);
-  }
-}
-
-// Load commentary from file
-function loadCommentaryFromFile(): { message: string; timestamp: string }[] {
-  try {
-    ensureDataDir();
-    if (fs.existsSync(COMMENTARY_FILE)) {
-      const data = fs.readFileSync(COMMENTARY_FILE, 'utf-8');
-      return JSON.parse(data);
-    }
-  } catch (error) {
-    console.error('Error loading commentary from file:', error);
-  }
-  return [];
-}
-
-// Save commentary to file
-function saveCommentaryToFile(commentary: { message: string; timestamp: string }[]) {
-  try {
-    ensureDataDir();
-    fs.writeFileSync(COMMENTARY_FILE, JSON.stringify(commentary, null, 2));
-  } catch (error) {
-    console.error('Error saving commentary to file:', error);
-  }
-}
-
 export async function getScores(): Promise<TeamScore[]> {
-  if (cachedScores.length === 0) {
-    cachedScores = loadScoresFromFile();
+  const { data: scores, error } = await supabase
+    .from('scores')
+    .select('*')
+    .order('total', { ascending: false });
+
+  if (error) {
+    console.error('Error fetching scores from Supabase:', error);
+    return [];
   }
-  return cachedScores;
+
+  // Map database fields to TeamScore interface
+  return (scores || []).map((s, index) => ({
+    teamId: s.id,
+    teamName: s.team_name,
+    repo: s.repo,
+    track: s.track,
+    problem: s.problem,
+    solution: s.solution,
+    execution: s.execution,
+    total: s.total,
+    linesOfCode: s.lines_of_code,
+    commentary: s.commentary,
+    lastUpdated: s.last_updated,
+    currentRank: index + 1,
+  }));
 }
 
 export async function saveScores(scores: TeamScore[]): Promise<void> {
   // Calculate ranks
   const sortedScores = [...scores].sort((a, b) => b.total - a.total);
-  sortedScores.forEach((score, index) => {
-    const existingScore = cachedScores.find(s => s.teamId === score.teamId);
-    score.previousRank = existingScore?.currentRank;
-    score.currentRank = index + 1;
-  });
 
-  cachedScores = sortedScores;
-  saveScoresToFile(sortedScores);
+  console.log(`[Storage] Saving ${sortedScores.length} scores to Supabase`);
+
+  for (let i = 0; i < sortedScores.length; i++) {
+    const score = sortedScores[i];
+    score.currentRank = i + 1;
+
+    const payload = {
+      id: teamIdToUUID(score.teamId),
+      team_name: score.teamName,
+      repo: score.repo,
+      track: score.track,
+      problem: score.problem,
+      solution: score.solution,
+      execution: score.execution,
+      total: score.total,
+      lines_of_code: score.linesOfCode,
+      commentary: score.commentary,
+      last_updated: score.lastUpdated || new Date().toISOString(),
+    };
+
+    console.log(`[Storage] Upserting score for ${score.teamName} (id: ${score.teamId})`);
+
+    const { data, error } = await supabase
+      .from('scores')
+      .upsert(payload, {
+        onConflict: 'id'
+      })
+      .select();
+
+    if (error) {
+      console.error(`[Storage] Error saving score for ${score.teamName}:`, JSON.stringify(error));
+    } else {
+      console.log(`[Storage] Successfully saved score for ${score.teamName}:`, data);
+    }
+  }
 }
 
 export async function updateScore(score: TeamScore): Promise<void> {
-  const existingIndex = cachedScores.findIndex(s => s.teamId === score.teamId);
-  if (existingIndex >= 0) {
-    cachedScores[existingIndex] = score;
-  } else {
-    cachedScores.push(score);
-  }
+  const { error } = await supabase
+    .from('scores')
+    .upsert({
+      id: teamIdToUUID(score.teamId),
+      team_name: score.teamName,
+      repo: score.repo,
+      track: score.track,
+      problem: score.problem,
+      solution: score.solution,
+      execution: score.execution,
+      total: score.total,
+      lines_of_code: score.linesOfCode,
+      commentary: score.commentary,
+      last_updated: score.lastUpdated || new Date().toISOString(),
+    }, {
+      onConflict: 'id'
+    });
 
-  // Recalculate ranks
-  await saveScores(cachedScores);
+  if (error) {
+    console.error(`Error updating score for ${score.teamName}:`, error);
+    throw error;
+  }
 }
 
 export async function getCommentary(limit: number = 10): Promise<{ message: string; timestamp: string }[]> {
-  if (cachedCommentary.length === 0) {
-    cachedCommentary = loadCommentaryFromFile();
-  }
   return cachedCommentary.slice(0, limit);
 }
 
@@ -115,11 +127,8 @@ export async function addCommentary(message: string): Promise<void> {
   if (cachedCommentary.length > 50) {
     cachedCommentary = cachedCommentary.slice(0, 50);
   }
-
-  saveCommentaryToFile(cachedCommentary);
 }
 
 export async function clearCache(): Promise<void> {
-  cachedScores = [];
   cachedCommentary = [];
 }

@@ -9,6 +9,9 @@ module.exports = {
       fontFamily: {
         sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial', 'sans-serif'],
         serif: ['Georgia', 'Cambria', 'serif'],
+        geist: ['var(--font-geist-sans)', 'sans-serif'],
+        'geist-mono': ['var(--font-geist-mono)', 'monospace'],
+        beton: ['var(--font-beton)', 'serif'],
       },
       colors: {
         saturn: {

@@ -17,6 +17,30 @@
       "name": "InspiredSearch",
       "repo": "https://github.com/bugattmark/InspiredSearch",
       "track": 1
+    },
+    {
+      "id": "accessibility-hack",
+      "name": "Accessibility Hack",
+      "repo": "https://github.com/snowcodeer/accessbility-hack",
+      "track": 1
+    },
+    {
+      "id": "hackavengers-warsaw",
+      "name": "HackAvengers Warsaw",
+      "repo": "https://github.com/snowcodeer/HackAvengers-Warsaw",
+      "track": 1
+    },
+    {
+      "id": "cursor-hack",
+      "name": "Cursor Hack",
+      "repo": "https://github.com/snowcodeer/cursor-hack",
+      "track": 1
+    },
+    {
+      "id": "iterate-hack",
+      "name": "Iterate Hack",
+      "repo": "https://github.com/snowcodeer/iterate-hack",
+      "track": 1
     }
   ]
 }
