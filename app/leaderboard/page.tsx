@@ -249,17 +249,11 @@ export default function LeaderboardPage() {
               </div>
 
               {/* Description */}
-              <div className="rounded-2xl p-6 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-white shadow-[0_20px_60px_-40px_rgba(0,0,0,0.6)] border border-gray-800">
-                <div className="flex items-center gap-3 mb-3">
-                  <div className="h-1 w-10 bg-white" />
-                  <h3 className="font-beton font-medium text-2xl tracking-[0.08em]">WHAT IT DOES</h3>
-                </div>
-                <p className="text-2xl leading-snug font-medium text-gray-100">
-                  {currentTeam.description && currentTeam.description.trim().length > 0
-                    ? currentTeam.description
-                    : 'No description provided yet.'}
-                </p>
-              </div>
+              <p className="text-2xl leading-relaxed text-gray-600">
+                {currentTeam.description && currentTeam.description.trim().length > 0
+                  ? currentTeam.description
+                  : 'No description provided yet.'}
+              </p>
             </div>
           </>
         ) : (

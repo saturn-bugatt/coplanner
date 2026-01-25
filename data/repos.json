@@ -104,7 +104,8 @@
       "repo": "https://github.com/farandead/nova",
       "track": 1,
       "twitter": ["@faranzzzzz", "@MunjavarSa14054"],
-      "members": ["Faran", "Munjawar"],
+      "members": ["Faran", "Sahid"],
+      "image": "/IMG_4427.jpg",
       "description": "10x Your Accounting Power - AI-powered accounting automation"
     },
     {
@@ -113,7 +114,8 @@
       "repo": "https://github.com/KenjiPcx/LoaChaser",
       "track": 1,
       "twitter": ["@kenjiphang"],
-      "members": ["Kenji Phang"],
+      "members": ["James", "Kenji", "Roze"],
+      "image": "/IMG_4432.jpg",
       "description": "Voice automation for LOA chasing in wealth management"
     },
     {
@@ -123,6 +125,7 @@
       "track": 2,
       "twitter": ["@denysnekod69", "@IMhimanshuag"],
       "members": ["Denys", "Himanshu Agarwal"],
+      "image": "/IMG_20260124_152033.jpg",
       "description": "Simplified UK tax filing for small businesses and freelancers"
     },
     {
@@ -131,7 +134,8 @@
       "repo": "https://github.com/mirzaalihussain2/saturn-fe",
       "track": 2,
       "twitter": [],
-      "members": ["Maryam"],
+      "members": ["Mariam", "Ali"],
+      "image": "/IMG_4431.jpg",
       "description": "AI low-cost diagnostics for emerging markets"
     },
     {
@@ -159,7 +163,55 @@
       "track": 1,
       "twitter": ["@ak_shay99"],
       "members": ["Akshay Khanna"],
+      "image": "/IMG_20260124_152904.jpg",
       "description": "Geopolitics Health Scan for Assets - assess geopolitical risk impact on investments"
+    },
+    {
+      "id": "gid-go",
+      "name": "gid.go",
+      "repo": "https://github.com/franciscoSpecter/saturn-loa",
+      "track": 1,
+      "twitter": ["@frankterpo"],
+      "members": ["Francisco"],
+      "image": "/IMG_20260124_155545.jpg",
+      "description": "The Lovable of LOA - AI-Powered Letter of Authority Automation for UK Financial Advisers"
+    },
+    {
+      "id": "agentlint",
+      "name": "AgentLint",
+      "repo": "https://github.com/augmented-os/nucleus",
+      "track": 1,
+      "twitter": ["@AIAugmented"],
+      "members": [],
+      "description": "AI agent linting and validation tool"
+    },
+    {
+      "id": "atlas-loa",
+      "name": "ATLAS-LOA",
+      "repo": "https://github.com/krish-parikh/ATLAS-LOA",
+      "track": 1,
+      "twitter": ["@kparikh05"],
+      "members": ["Krish Parikh"],
+      "image": "/IMG_20260124_154918.jpg",
+      "description": "Letter of Authority automation system"
+    },
+    {
+      "id": "ad-visor",
+      "name": "Ad-visor",
+      "repo": "https://github.com/maidacundo/advision",
+      "track": 1,
+      "twitter": [],
+      "members": ["Maidacundo"],
+      "description": "AI Video Platform for Financial Advisors"
+    },
+    {
+      "id": "irecall",
+      "name": "iRecall",
+      "repo": "https://github.com/akshaykhanna99/dimentia_ai_assistant",
+      "track": 2,
+      "twitter": ["@ak_shay99"],
+      "members": ["Akshay Khanna"],
+      "description": "AI powered dementia assistant - visual audio assistant for individuals with dementia"
     }
   ]
 }
