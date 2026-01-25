@@ -41,7 +41,13 @@ export async function GET() {
       total: s.total,
       lines_of_code: s.linesOfCode,
       commentary: s.commentary,
-      last_updated: s.lastUpdated
+      pros: s.pros || [],
+      cons: s.cons || [],
+      suggestions: s.suggestions || [],
+      last_updated: s.lastUpdated,
+      twitter: s.twitter || [],
+      members: s.members || [],
+      image: s.image || null
     }));
 
     // Sort by total descending

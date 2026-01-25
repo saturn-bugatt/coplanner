@@ -46,31 +46,101 @@
       "id": "eurobridge",
       "name": "EuroBridge",
       "repo": "https://github.com/gopeto22/EuroBridge",
-      "track": 1
+      "track": 1,
+      "twitter": ["@4l_ggg", "@lorint"],
+      "members": ["Georgi Iliev", "Lorin Thwaits"],
+      "image": "/IMG_4434.jpg"
     },
     {
       "id": "lets-saturn",
       "name": "Lets Saturn",
       "repo": "https://github.com/meleantonio/lets-saturn",
-      "track": 1
+      "track": 1,
+      "twitter": ["@antoniomele101"],
+      "members": ["Antonio Mele"],
+      "image": "/IMG_20260124_154748.jpg"
     },
     {
       "id": "mps-enhancer",
       "name": "MPS Enhancer",
       "repo": "https://github.com/Shiv716/MPSEnhancer-SaturnxEF",
-      "track": 1
+      "track": 1,
+      "twitter": ["@Shiv"],
+      "members": ["Shivang"],
+      "image": "/IMG_20260124_152635.jpg"
     },
     {
       "id": "holly-and-morty",
       "name": "Holly & Morty",
       "repo": "https://github.com/rithinch/holly-and-morty",
-      "track": 2
+      "track": 2,
+      "twitter": ["@rithinch", "@Kay"],
+      "members": ["Rithin", "Kay"]
     },
     {
       "id": "boon",
       "name": "Boon",
       "repo": "https://github.com/philippbogdan/boon",
-      "track": 1
+      "track": 1,
+      "twitter": ["@philbog"],
+      "members": ["Philipp Bogdan"],
+      "image": "/IMG_4428.jpg"
+    },
+    {
+      "id": "nova",
+      "name": "Nova",
+      "repo": "https://github.com/farandead/nova",
+      "track": 1,
+      "twitter": ["@faranzzzzz", "@MunjavarSa14054"],
+      "members": ["Faran", "Munjawar"]
+    },
+    {
+      "id": "pluto",
+      "name": "Pluto",
+      "repo": "https://github.com/KenjiPcx/LoaChaser",
+      "track": 1,
+      "twitter": ["@kenjiphang"],
+      "members": ["Kenji Phang"]
+    },
+    {
+      "id": "taxdone",
+      "name": "TaxDone",
+      "repo": "https://github.com/itssHimanshuAgarwal/tax-flow-pro",
+      "track": 2,
+      "twitter": ["@denysnekod69", "@IMhimanshuag"],
+      "members": ["Denys", "Himanshu Agarwal"]
+    },
+    {
+      "id": "clinix",
+      "name": "Clinix",
+      "repo": "https://github.com/mirzaalihussain2/saturn-fe",
+      "track": 2,
+      "twitter": [],
+      "members": ["Maryam"]
+    },
+    {
+      "id": "facile",
+      "name": "Facile",
+      "repo": "https://github.com/danny-1k/facile",
+      "track": 1,
+      "twitter": [],
+      "members": []
+    },
+    {
+      "id": "titan",
+      "name": "Titan",
+      "repo": "https://github.com/handano/titan-saturn-hack-v2",
+      "track": 1,
+      "twitter": ["@tirth_8205", "@dkaria_dev", "@Handan_AI"],
+      "members": ["Tirth Kanani", "Dev Karia", "Handan"]
+    },
+    {
+      "id": "mandala",
+      "name": "Mandala",
+      "repo": "https://github.com/akshaykhanna99/mandala",
+      "track": 1,
+      "twitter": ["@ak_shay99"],
+      "members": ["Akshay Khanna"]
     }
   ]
 }
