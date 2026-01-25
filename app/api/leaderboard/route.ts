@@ -29,6 +29,16 @@ export async function GET() {
     const fileContent = fs.readFileSync(scoresPath, 'utf-8');
     const localScores = JSON.parse(fileContent);
 
+    // Load team descriptions from repos.json
+    const reposPath = path.join(process.cwd(), 'data/repos.json');
+    let teamDescriptions: Record<string, string> = {};
+    if (fs.existsSync(reposPath)) {
+      const reposData = JSON.parse(fs.readFileSync(reposPath, 'utf-8'));
+      for (const team of reposData.teams) {
+        teamDescriptions[team.id] = team.description || '';
+      }
+    }
+
     // Transform to expected format
     const scores = localScores.map((s: any) => ({
       id: s.teamId,
@@ -41,6 +51,7 @@ export async function GET() {
       total: s.total,
       lines_of_code: s.linesOfCode,
       commentary: s.commentary,
+      description: teamDescriptions[s.teamId] || s.description || '',
       pros: s.pros || [],
       cons: s.cons || [],
       suggestions: s.suggestions || [],

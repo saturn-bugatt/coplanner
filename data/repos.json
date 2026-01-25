@@ -4,43 +4,50 @@
       "id": "grokathon",
       "name": "Grokathon",
       "repo": "https://github.com/bugattmark/grokathon",
-      "track": 1
+      "track": 1,
+      "description": "AI-powered financial analysis tool"
     },
     {
       "id": "marionette",
       "name": "Marionette",
       "repo": "https://github.com/bugattmark/marionette",
-      "track": 2
+      "track": 2,
+      "description": "Automation platform for underserved markets"
     },
     {
       "id": "inspired-search",
       "name": "InspiredSearch",
       "repo": "https://github.com/bugattmark/InspiredSearch",
-      "track": 1
+      "track": 1,
+      "description": "Intelligent search for financial data"
     },
     {
       "id": "accessibility-hack",
       "name": "Accessibility Hack",
       "repo": "https://github.com/snowcodeer/accessbility-hack",
-      "track": 1
+      "track": 1,
+      "description": "Accessible financial tools"
     },
     {
       "id": "hackavengers-warsaw",
       "name": "HackAvengers Warsaw",
       "repo": "https://github.com/snowcodeer/HackAvengers-Warsaw",
-      "track": 1
+      "track": 1,
+      "description": "Financial technology solution"
     },
     {
       "id": "cursor-hack",
       "name": "Cursor Hack",
       "repo": "https://github.com/snowcodeer/cursor-hack",
-      "track": 1
+      "track": 1,
+      "description": "AI-assisted development tool"
     },
     {
       "id": "iterate-hack",
       "name": "Iterate Hack",
       "repo": "https://github.com/snowcodeer/iterate-hack",
-      "track": 1
+      "track": 1,
+      "description": "Iterative financial planning"
     },
     {
       "id": "eurobridge",
@@ -49,7 +56,8 @@
       "track": 1,
       "twitter": ["@4l_ggg", "@lorint"],
       "members": ["Georgi Iliev", "Lorin Thwaits"],
-      "image": "/IMG_4434.jpg"
+      "image": "/IMG_4434.jpg",
+      "description": "A trust-first AI agent for financial advisers to unlock Eastern European investments"
     },
     {
       "id": "lets-saturn",
@@ -58,7 +66,8 @@
       "track": 1,
       "twitter": ["@antoniomele101"],
       "members": ["Antonio Mele"],
-      "image": "/IMG_20260124_154748.jpg"
+      "image": "/IMG_20260124_154748.jpg",
+      "description": "Automate suitability report generation from customer data, giving rationale for each choice"
     },
     {
       "id": "mps-enhancer",
@@ -67,7 +76,8 @@
       "track": 1,
       "twitter": ["@Shiv"],
       "members": ["Shivang"],
-      "image": "/IMG_20260124_152635.jpg"
+      "image": "/IMG_20260124_152635.jpg",
+      "description": "FCA-compliant Model Portfolio Service (MPS) suitability tool for UK financial advisers"
     },
     {
       "id": "holly-and-morty",
@@ -75,7 +85,8 @@
       "repo": "https://github.com/rithinch/holly-and-morty",
       "track": 2,
       "twitter": ["@rithinch", "@Kay"],
-      "members": ["Rithin", "Kay"]
+      "members": ["Rithin", "Kay"],
+      "description": "Voice Agents for financial advisor data gathering - automates client interviews and fact finding"
     },
     {
       "id": "boon",
@@ -84,7 +95,8 @@
       "track": 1,
       "twitter": ["@philbog"],
       "members": ["Philipp Bogdan"],
-      "image": "/IMG_4428.jpg"
+      "image": "/IMG_4428.jpg",
+      "description": "AI-powered fact-finding platform for financial advisers"
     },
     {
       "id": "nova",
@@ -92,7 +104,8 @@
       "repo": "https://github.com/farandead/nova",
       "track": 1,
       "twitter": ["@faranzzzzz", "@MunjavarSa14054"],
-      "members": ["Faran", "Munjawar"]
+      "members": ["Faran", "Munjawar"],
+      "description": "10x Your Accounting Power - AI-powered accounting automation"
     },
     {
       "id": "pluto",
@@ -100,7 +113,8 @@
       "repo": "https://github.com/KenjiPcx/LoaChaser",
       "track": 1,
       "twitter": ["@kenjiphang"],
-      "members": ["Kenji Phang"]
+      "members": ["Kenji Phang"],
+      "description": "Voice automation for LOA chasing in wealth management"
     },
     {
       "id": "taxdone",
@@ -108,7 +122,8 @@
       "repo": "https://github.com/itssHimanshuAgarwal/tax-flow-pro",
       "track": 2,
       "twitter": ["@denysnekod69", "@IMhimanshuag"],
-      "members": ["Denys", "Himanshu Agarwal"]
+      "members": ["Denys", "Himanshu Agarwal"],
+      "description": "Simplified UK tax filing for small businesses and freelancers"
     },
     {
       "id": "clinix",
@@ -116,7 +131,8 @@
       "repo": "https://github.com/mirzaalihussain2/saturn-fe",
       "track": 2,
       "twitter": [],
-      "members": ["Maryam"]
+      "members": ["Maryam"],
+      "description": "AI low-cost diagnostics for emerging markets"
     },
     {
       "id": "facile",
@@ -124,7 +140,8 @@
       "repo": "https://github.com/danny-1k/facile",
       "track": 1,
       "twitter": [],
-      "members": []
+      "members": [],
+      "description": "Market regime-aware investment analysis tool"
     },
     {
       "id": "titan",
@@ -132,7 +149,8 @@
       "repo": "https://github.com/handano/titan-saturn-hack-v2",
       "track": 1,
       "twitter": ["@tirth_8205", "@dkaria_dev", "@Handan_AI"],
-      "members": ["Tirth Kanani", "Dev Karia", "Handan"]
+      "members": ["Tirth Kanani", "Dev Karia", "Handan"],
+      "description": "Compliance Checker for Suitability Reports - sanity checker for financial documents"
     },
     {
       "id": "mandala",
@@ -140,7 +158,8 @@
       "repo": "https://github.com/akshaykhanna99/mandala",
       "track": 1,
       "twitter": ["@ak_shay99"],
-      "members": ["Akshay Khanna"]
+      "members": ["Akshay Khanna"],
+      "description": "Geopolitics Health Scan for Assets - assess geopolitical risk impact on investments"
     }
   ]
 }

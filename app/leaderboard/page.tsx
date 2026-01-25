@@ -14,6 +14,7 @@ interface Score {
   total: number;
   lines_of_code: number;
   commentary: string | null;
+  description: string;
   pros: string[];
   cons: string[];
   suggestions: string[];
@@ -247,66 +248,18 @@ export default function LeaderboardPage() {
                 </div>
               </div>
 
-              {/* Pros and Cons side by side */}
-              <div className="grid grid-cols-2 gap-4 mb-4">
-                {currentTeam.pros && currentTeam.pros.length > 0 && (
-                  <div className="bg-green-50 rounded-xl p-4">
-                    <h3 className="font-beton font-medium text-2xl text-green-800 mb-2 flex items-center gap-2">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                      </svg>
-                      Strengths
-                    </h3>
-                    <ul className="space-y-1">
-                      {currentTeam.pros.slice(0, 3).map((pro, i) => (
-                        <li key={i} className="text-green-900 text-lg flex items-start gap-2">
-                          <span className="text-green-500 mt-1">+</span>
-                          <span className="line-clamp-2">{pro}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-
-                {currentTeam.cons && currentTeam.cons.length > 0 && (
-                  <div className="bg-red-50 rounded-xl p-4">
-                    <h3 className="font-beton font-medium text-2xl text-red-800 mb-2 flex items-center gap-2">
-                      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
-                      </svg>
-                      Improve
-                    </h3>
-                    <ul className="space-y-1">
-                      {currentTeam.cons.slice(0, 3).map((con, i) => (
-                        <li key={i} className="text-red-900 text-lg flex items-start gap-2">
-                          <span className="text-red-500 mt-1">-</span>
-                          <span className="line-clamp-2">{con}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                )}
-              </div>
-
-              {/* Suggestions */}
-              {currentTeam.suggestions && currentTeam.suggestions.length > 0 && (
-                <div className="bg-blue-50 rounded-xl p-4">
-                  <h3 className="font-beton font-medium text-2xl text-blue-800 mb-2 flex items-center gap-2">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
-                    </svg>
-                    Suggestions
-                  </h3>
-                  <ul className="space-y-1">
-                    {currentTeam.suggestions.slice(0, 2).map((suggestion, i) => (
-                      <li key={i} className="text-blue-900 text-lg flex items-start gap-2">
-                        <span className="text-blue-500 mt-1">{i + 1}.</span>
-                        <span className="line-clamp-2">{suggestion}</span>
-                      </li>
-                    ))}
-                  </ul>
+              {/* Description */}
+              <div className="rounded-2xl p-6 bg-gradient-to-br from-gray-900 via-gray-900 to-gray-800 text-white shadow-[0_20px_60px_-40px_rgba(0,0,0,0.6)] border border-gray-800">
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="h-1 w-10 bg-white" />
+                  <h3 className="font-beton font-medium text-2xl tracking-[0.08em]">WHAT IT DOES</h3>
                 </div>
-              )}
+                <p className="text-2xl leading-snug font-medium text-gray-100">
+                  {currentTeam.description && currentTeam.description.trim().length > 0
+                    ? currentTeam.description
+                    : 'No description provided yet.'}
+                </p>
+              </div>
             </div>
           </>
         ) : (
