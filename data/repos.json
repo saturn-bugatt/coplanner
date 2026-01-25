@@ -41,6 +41,36 @@
       "name": "Iterate Hack",
       "repo": "https://github.com/snowcodeer/iterate-hack",
       "track": 1
+    },
+    {
+      "id": "eurobridge",
+      "name": "EuroBridge",
+      "repo": "https://github.com/gopeto22/EuroBridge",
+      "track": 1
+    },
+    {
+      "id": "lets-saturn",
+      "name": "Lets Saturn",
+      "repo": "https://github.com/meleantonio/lets-saturn",
+      "track": 1
+    },
+    {
+      "id": "mps-enhancer",
+      "name": "MPS Enhancer",
+      "repo": "https://github.com/Shiv716/MPSEnhancer-SaturnxEF",
+      "track": 1
+    },
+    {
+      "id": "holly-and-morty",
+      "name": "Holly & Morty",
+      "repo": "https://github.com/rithinch/holly-and-morty",
+      "track": 2
+    },
+    {
+      "id": "boon",
+      "name": "Boon",
+      "repo": "https://github.com/philippbogdan/boon",
+      "track": 1
     }
   ]
 }
