@@ -56,7 +56,7 @@
       "track": 1,
       "twitter": ["@4l_ggg", "@lorint"],
       "members": ["Georgi Iliev", "Lorin Thwaits"],
-      "image": "/IMG_4434.jpg",
+      "image": "/team-eurobridge.jpg",
       "description": "A trust-first AI agent for financial advisers to unlock Eastern European investments"
     },
     {
@@ -66,7 +66,7 @@
       "track": 1,
       "twitter": ["@antoniomele101"],
       "members": ["Antonio Mele"],
-      "image": "/IMG_20260124_154748.jpg",
+      "image": "/team-lets-saturn.jpg",
       "description": "Automate suitability report generation from customer data, giving rationale for each choice"
     },
     {
@@ -76,7 +76,7 @@
       "track": 1,
       "twitter": ["@Shiv"],
       "members": ["Shivang"],
-      "image": "/IMG_20260124_152635.jpg",
+      "image": "/team-mps-enhancer.jpg",
       "description": "FCA-compliant Model Portfolio Service (MPS) suitability tool for UK financial advisers"
     },
     {
@@ -86,6 +86,7 @@
       "track": 2,
       "twitter": ["@rithinch", "@Kay"],
       "members": ["Rithin", "Kay"],
+      "image": "/team-holly-morty.jpg",
       "description": "Voice Agents for financial advisor data gathering - automates client interviews and fact finding"
     },
     {
@@ -95,7 +96,7 @@
       "track": 1,
       "twitter": ["@philbog"],
       "members": ["Philipp Bogdan"],
-      "image": "/IMG_4428.jpg",
+      "image": "/team-boon.jpg",
       "description": "AI-powered fact-finding platform for financial advisers"
     },
     {
@@ -105,7 +106,7 @@
       "track": 1,
       "twitter": ["@faranzzzzz", "@MunjavarSa14054"],
       "members": ["Faran", "Sahid"],
-      "image": "/IMG_4427.jpg",
+      "image": "/team-nova.jpg",
       "description": "10x Your Accounting Power - AI-powered accounting automation"
     },
     {
@@ -115,7 +116,7 @@
       "track": 1,
       "twitter": ["@kenjiphang"],
       "members": ["James", "Kenji", "Roze"],
-      "image": "/IMG_4432.jpg",
+      "image": "/team-pluto.jpg",
       "description": "Voice automation for LOA chasing in wealth management"
     },
     {
@@ -125,7 +126,7 @@
       "track": 2,
       "twitter": ["@denysnekod69", "@IMhimanshuag"],
       "members": ["Denys", "Himanshu Agarwal"],
-      "image": "/IMG_20260124_152033.jpg",
+      "image": "/team-taxdone.jpg",
       "description": "Simplified UK tax filing for small businesses and freelancers"
     },
     {
@@ -135,7 +136,7 @@
       "track": 2,
       "twitter": [],
       "members": ["Mariam", "Ali"],
-      "image": "/IMG_4431.jpg",
+      "image": "/team-clinix.jpg",
       "description": "AI low-cost diagnostics for emerging markets"
     },
     {
@@ -154,6 +155,7 @@
       "track": 1,
       "twitter": ["@tirth_8205", "@dkaria_dev", "@Handan_AI"],
       "members": ["Tirth Kanani", "Dev Karia", "Handan"],
+      "image": "/team-titan.jpg",
       "description": "Compliance Checker for Suitability Reports - sanity checker for financial documents"
     },
     {
@@ -163,7 +165,7 @@
       "track": 1,
       "twitter": ["@ak_shay99"],
       "members": ["Akshay Khanna"],
-      "image": "/IMG_20260124_152904.jpg",
+      "image": "/team-mandala.jpg",
       "description": "Geopolitics Health Scan for Assets - assess geopolitical risk impact on investments"
     },
     {
@@ -173,7 +175,7 @@
       "track": 1,
       "twitter": ["@frankterpo"],
       "members": ["Francisco"],
-      "image": "/IMG_20260124_155545.jpg",
+      "image": "/team-gid.jpg",
       "description": "The Lovable of LOA - AI-Powered Letter of Authority Automation for UK Financial Advisers"
     },
     {
@@ -183,6 +185,7 @@
       "track": 1,
       "twitter": ["@AIAugmented"],
       "members": [],
+      "image": "/team-agentlint.jpg",
       "description": "AI agent linting and validation tool"
     },
     {
@@ -192,7 +195,7 @@
       "track": 1,
       "twitter": ["@kparikh05"],
       "members": ["Krish Parikh"],
-      "image": "/IMG_20260124_154918.jpg",
+      "image": "/team-atlas-loa.jpg",
       "description": "Letter of Authority automation system"
     },
     {
