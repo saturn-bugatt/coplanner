@@ -34,5 +34,5 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# Data storage (local development)
-.data/
+# Data storage - now tracked in git
+# .data/

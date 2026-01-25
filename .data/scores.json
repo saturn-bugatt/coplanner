@@ -1,0 +1,900 @@
+[
+  {
+    "teamId": "mandala",
+    "teamName": "Mandala",
+    "repo": "https://github.com/akshaykhanna99/mandala",
+    "track": 1,
+    "problem": 4.5,
+    "solution": 4.3,
+    "execution": 4.2,
+    "total": 13,
+    "linesOfCode": 1239552,
+    "commentary": "Ambitious and well-executed platform that tackles an underserved but critical aspect of financial risk.",
+    "pros": [
+      "Addresses critical blind spot in financial decision-making with geopolitical risk assessment",
+      "Comprehensive full-stack implementation with database, AI integration, and PDF reporting"
+    ],
+    "cons": [
+      "Massive dependency footprint (6600+ files) suggests over-engineering for a hackathon",
+      "Geopolitical risk scoring methodology lacks transparency and validation"
+    ],
+    "suggestions": [
+      "Streamline the codebase and remove unnecessary dependencies",
+      "Provide more detailed methodology for how geopolitical events translate to specific risk scores"
+    ],
+    "lastUpdated": "2026-01-25T11:55:43.718Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@ak_shay99"
+    ],
+    "members": [
+      "Akshay Khanna"
+    ]
+  },
+  {
+    "teamId": "lets-saturn",
+    "teamName": "Lets Saturn",
+    "repo": "https://github.com/meleantonio/lets-saturn",
+    "track": 1,
+    "problem": 4.3,
+    "solution": 3.9,
+    "execution": 4.2,
+    "total": 12.4,
+    "linesOfCode": 12843,
+    "commentary": "Well-executed automation of a real adviser pain point, but lacks breakthrough innovation to transform the space.",
+    "pros": [
+      "Addresses genuine pain point of time-consuming suitability report generation",
+      "Comprehensive feature set with document parsing, version control, and audit trails",
+      "Production-ready architecture using modern tech stack with proper database design"
+    ],
+    "cons": [
+      "Solution approach is incremental rather than innovative - mostly automating existing workflows",
+      "Limited differentiation from existing compliance software in the market",
+      "Heavy reliance on document upload workflow may not fit all adviser practices"
+    ],
+    "suggestions": [
+      "Add predictive analytics to identify compliance risks before they occur",
+      "Integrate real-time market data to auto-update recommendations",
+      "Build mobile-first interface for client meetings and data capture"
+    ],
+    "lastUpdated": "2026-01-25T10:41:07.185Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@antoniomele101"
+    ],
+    "members": [
+      "Antonio Mele"
+    ],
+    "image": "/IMG_20260124_154748.jpg"
+  },
+  {
+    "teamId": "nova",
+    "teamName": "Nova",
+    "repo": "https://github.com/farandead/nova",
+    "track": 1,
+    "problem": 4.2,
+    "solution": 3.8,
+    "execution": 4.1,
+    "total": 12.1,
+    "linesOfCode": 34840,
+    "commentary": "Solid execution on a known problem, but lacks the breakthrough innovation needed to stand out in a crowded accounting automation space.",
+    "pros": [
+      "Addresses a real pain point with accounting workflow automation that has measurable impact (80% time savings claim)",
+      "Comprehensive full-stack implementation with proper database migrations, AI agents, and multiple integrations"
+    ],
+    "cons": [
+      "Solution is largely incremental - AI document processing for accounting already exists from multiple vendors",
+      "Overly ambitious scope for hackathon timeframe may have diluted focus on core differentiators"
+    ],
+    "suggestions": [
+      "Focus on one unique workflow (like real-time bank reconciliation) rather than trying to solve all accounting problems",
+      "Provide actual working demo or video showing the AI agents processing documents end-to-end"
+    ],
+    "lastUpdated": "2026-01-25T10:49:46.185Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@faranzzzzz",
+      "@MunjavarSa14054"
+    ],
+    "members": [
+      "Faran",
+      "Munjawar"
+    ]
+  },
+  {
+    "teamId": "mps-enhancer",
+    "teamName": "MPS Enhancer",
+    "repo": "https://github.com/Shiv716/MPSEnhancer-SaturnxEF",
+    "track": 1,
+    "problem": 4.1,
+    "solution": 4.2,
+    "execution": 3.7,
+    "total": 12,
+    "linesOfCode": 5562,
+    "commentary": "Technically sound but architecturally messy solution that solves a specific adviser workflow well but lacks scalability.",
+    "pros": [
+      "Highly specialized solution targeting specific MPS recommendation workflow",
+      "Comprehensive compliance features with FCA-specific suitability scoring",
+      "Strong execution planning with trade sizing and pre-trade validation"
+    ],
+    "cons": [
+      "Single-file architecture makes the codebase difficult to maintain and scale",
+      "Limited to MPS recommendations only - narrow solution scope",
+      "Basic web interface lacks polish and professional presentation"
+    ],
+    "suggestions": [
+      "Refactor monolithic code into modular components for better maintainability",
+      "Expand beyond MPS to cover broader investment recommendation workflows",
+      "Improve UI/UX design to match professional adviser tool standards"
+    ],
+    "lastUpdated": "2026-01-25T10:41:07.185Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@Shiv"
+    ],
+    "members": [
+      "Shivang"
+    ],
+    "image": "/IMG_20260124_152635.jpg"
+  },
+  {
+    "teamId": "pluto",
+    "teamName": "Pluto",
+    "repo": "https://github.com/KenjiPcx/LoaChaser",
+    "track": 1,
+    "problem": 3.8,
+    "solution": 4.3,
+    "execution": 3.9,
+    "total": 12,
+    "linesOfCode": 12949,
+    "commentary": "Creative solution to a real niche problem, but needs more substance behind the slick interface to prove it can actually work.",
+    "pros": [
+      "Tackles a genuinely painful and manual process (LOA chasing) that wealth managers actually struggle with",
+      "Novel multimodal approach combining voice agents, document processing, and portal automation in one pipeline"
+    ],
+    "cons": [
+      "Limited to a niche market (wealth management ops teams) which reduces overall impact potential",
+      "Heavy reliance on mock/stub implementations rather than fully working integrations"
+    ],
+    "suggestions": [
+      "Build out at least one fully functional agent execution path to demonstrate real capability",
+      "Expand beyond wealth management to other industries with similar document-chasing workflows (legal, insurance, etc.)"
+    ],
+    "lastUpdated": "2026-01-25T10:49:46.187Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@kenjiphang"
+    ],
+    "members": [
+      "Kenji Phang"
+    ]
+  },
+  {
+    "teamId": "taxdone",
+    "teamName": "TaxDone",
+    "repo": "https://github.com/itssHimanshuAgarwal/tax-flow-pro",
+    "track": 2,
+    "problem": 4.2,
+    "solution": 3.8,
+    "execution": 4,
+    "total": 12,
+    "linesOfCode": 31108,
+    "commentary": "Solid execution on a real problem, but the 'underserved' angle is questionable given existing competition.",
+    "pros": [
+      "Tackles a genuinely underserved problem - UK small business tax filing is notoriously complex and poorly served by HMRC",
+      "Shows deep understanding of target users (sole traders, freelancers) vs non-target (PAYE employees)",
+      "Impressive technical scope with working HMRC sandbox integration and multi-agent AI system"
+    ],
+    "cons": [
+      "Solution feels more like improved tooling rather than truly innovative approach - still requires user input and review",
+      "Heavy reliance on AI agents may not actually reduce complexity for users who don't trust AI with tax decisions",
+      "Market may not be as underserved as claimed - established players like FreeAgent, Xero already serve this space"
+    ],
+    "suggestions": [
+      "Focus on one specific pain point (like automatic expense categorization) rather than trying to solve entire tax filing process",
+      "Add more concrete validation of the problem size - how many UK sole traders actually struggle vs use existing tools",
+      "Demonstrate clearer differentiation from existing accounting software that already integrates with HMRC"
+    ],
+    "lastUpdated": "2026-01-25T10:49:46.187Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@denysnekod69",
+      "@IMhimanshuag"
+    ],
+    "members": [
+      "Denys",
+      "Himanshu Agarwal"
+    ]
+  },
+  {
+    "teamId": "ad-visor",
+    "teamName": "Ad-visor",
+    "repo": "https://github.com/maidacundo/advision",
+    "track": 1,
+    "problem": 3.6,
+    "solution": 4,
+    "execution": 4.3,
+    "total": 11.9,
+    "linesOfCode": 47226,
+    "commentary": "Creative and well-executed solution but addresses a secondary problem rather than core financial decision-making.",
+    "pros": [
+      "Novel approach to financial advisor efficiency through video personalization",
+      "Sophisticated technical implementation with multiple AI APIs integrated",
+      "Strong execution with working video generation pipeline and timeline editor"
+    ],
+    "cons": [
+      "Video creation for client communication is less critical than core financial decision-making",
+      "High complexity solution that may be expensive to operate with multiple AI APIs",
+      "Compliance claims not demonstrated - critical for financial services"
+    ],
+    "suggestions": [
+      "Focus more on investment decision videos rather than general client communication",
+      "Demonstrate actual compliance features with audit trails and disclaimers",
+      "Show cost analysis and ROI for advisors using the platform"
+    ],
+    "lastUpdated": "2026-01-25T13:04:20.898Z",
+    "analysisMethod": "local-critical",
+    "twitter": [],
+    "members": [
+      "Maidacundo"
+    ]
+  },
+  {
+    "teamId": "titan",
+    "teamName": "Titan",
+    "repo": "https://github.com/handano/titan-saturn-hack-v2",
+    "track": 1,
+    "problem": 4.2,
+    "solution": 4,
+    "execution": 3.5,
+    "total": 11.7,
+    "linesOfCode": 3984,
+    "commentary": "Solid compliance automation concept with good technical design, but execution feels incomplete due to missing dependencies.",
+    "pros": [
+      "Tackles a real compliance pain point with massive financial liability implications",
+      "Sophisticated multi-agent architecture with blackboard pattern for handling large documents"
+    ],
+    "cons": [
+      "Heavy reliance on external PageIndex integration that isn't included in the codebase",
+      "Limited to reactive compliance checking rather than proactive decision support"
+    ],
+    "suggestions": [
+      "Include a working PDF processing implementation instead of relying on missing PageIndex",
+      "Add preventive guidance features that help users avoid compliance issues before they occur"
+    ],
+    "lastUpdated": "2026-01-25T11:55:43.717Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@tirth_8205",
+      "@dkaria_dev",
+      "@Handan_AI"
+    ],
+    "members": [
+      "Tirth Kanani",
+      "Dev Karia",
+      "Handan"
+    ]
+  },
+  {
+    "teamId": "gid-go",
+    "teamName": "gid.go",
+    "repo": "https://github.com/franciscoSpecter/saturn-loa",
+    "track": 1,
+    "problem": 4.2,
+    "solution": 3.8,
+    "execution": 3.5,
+    "total": 11.5,
+    "linesOfCode": 18457,
+    "commentary": "Impressive scope and problem understanding, but falls short on demonstrating actual working functionality.",
+    "pros": [
+      "Addresses a real, specific pain point for financial advisors with clear business impact",
+      "Comprehensive system design covering the entire LOA workflow from generation to tracking",
+      "Strong technical architecture with AWS integration and proper file structure"
+    ],
+    "cons": [
+      "Limited working code demonstration despite extensive documentation",
+      "Heavy reliance on AWS services may create vendor lock-in and complexity",
+      "No clear evidence of actual PDF parsing or AI integration working"
+    ],
+    "suggestions": [
+      "Build a simple working demo that generates one LOA letter end-to-end",
+      "Implement the PDF parsing functionality with actual sample documents",
+      "Create a basic web interface to showcase the workflow rather than just CLI"
+    ],
+    "lastUpdated": "2026-01-25T13:04:20.897Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@frankterpo"
+    ],
+    "members": [
+      "Francisco"
+    ],
+    "image": "/IMG_20260124_155545.jpg"
+  },
+  {
+    "teamId": "holly-and-morty",
+    "teamName": "Holly & Morty",
+    "repo": "https://github.com/rithinch/holly-and-morty",
+    "track": 2,
+    "problem": 4.3,
+    "solution": 3.8,
+    "execution": 3.2,
+    "total": 11.3,
+    "linesOfCode": 5149,
+    "commentary": "Solid technical execution targeting a real problem, but needs more community validation and accessibility considerations to truly serve the underserved.",
+    "pros": [
+      "Tackles a genuinely underserved problem - financial advice accessibility for non-wealthy individuals",
+      "Well-architected system with proper backend infrastructure (FastAPI, Cosmos DB, webhook handling)",
+      "Clear understanding of the financial advisory industry's structural inefficiencies"
+    ],
+    "cons": [
+      "Solution still requires human financial advisors, limiting true scalability for underserved populations",
+      "No evidence of community input or validation from actual underserved users",
+      "Frontend appears to be mostly mockups/screenshots rather than fully functional implementation"
+    ],
+    "suggestions": [
+      "Validate the solution with real users from underserved communities who currently lack financial advice",
+      "Build a more complete end-to-end demo showing the full conversation-to-advice pipeline",
+      "Consider how to make the solution truly accessible to low-income users (pricing, device requirements, internet access)"
+    ],
+    "lastUpdated": "2026-01-25T10:41:07.185Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@rithinch",
+      "@Kay"
+    ],
+    "members": [
+      "Rithin",
+      "Kay"
+    ]
+  },
+  {
+    "teamId": "eurobridge",
+    "teamName": "EuroBridge",
+    "repo": "https://github.com/gopeto22/EuroBridge",
+    "track": 1,
+    "problem": 3.2,
+    "solution": 3.8,
+    "execution": 4.1,
+    "total": 11.1,
+    "linesOfCode": 6291,
+    "commentary": "Solid technical execution solving a real but narrow problem for UK advisers exploring Eastern European investments.",
+    "pros": [
+      "Well-structured full-stack architecture with proper separation of concerns",
+      "Comprehensive knowledge base with real market data and regulatory documents",
+      "Professional implementation with audit trails and transparency features"
+    ],
+    "cons": [
+      "Very niche market focus limits addressable user base significantly",
+      "AI recommendations lack differentiation from existing investment research tools",
+      "Heavy dependency on curated data that may become stale quickly"
+    ],
+    "suggestions": [
+      "Expand beyond Eastern European markets to increase market size",
+      "Add quantitative portfolio optimization beyond basic AI chat",
+      "Build automated data ingestion to keep market intelligence current"
+    ],
+    "lastUpdated": "2026-01-25T10:41:07.184Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@4l_ggg",
+      "@lorint"
+    ],
+    "members": [
+      "Georgi Iliev",
+      "Lorin Thwaits"
+    ],
+    "image": "/IMG_4434.jpg"
+  },
+  {
+    "teamId": "livepasv",
+    "teamName": "LivePasv",
+    "repo": "https://github.com/Aminbcf17/livepasv",
+    "track": 1,
+    "problem": 4,
+    "solution": 3,
+    "execution": 4,
+    "total": 11,
+    "linesOfCode": 0,
+    "commentary": "LivePasv delivers a mathematically sophisticated and beautifully designed passive income visualizer that turns complex financial calculations into mesmerizing real-time displays! 💹",
+    "lastUpdated": "2026-01-22T14:45:24.307Z",
+    "assessment": {
+      "meta": {
+        "teamId": "livepasv",
+        "teamName": "LivePasv",
+        "repoUrl": "https://github.com/Aminbcf17/livepasv",
+        "track": 1,
+        "assessmentVersion": "3.0.0",
+        "assessedAt": "2026-01-22T14:45:24.307Z",
+        "durationMs": 57489
+      },
+      "discovery": {
+        "totalFiles": 7,
+        "codeFiles": 0,
+        "estimatedLinesOfCode": 0,
+        "techStack": {
+          "languages": [
+            "JavaScript",
+            "HTML",
+            "CSS"
+          ],
+          "frameworks": [
+            "Bulma CSS"
+          ],
+          "databases": [],
+          "infrastructure": [],
+          "aiIntegrations": []
+        },
+        "projectStructure": {
+          "hasMonorepo": false,
+          "mainDirectories": [
+            "LICENSE",
+            "Gemfile",
+            "hemipteron"
+          ],
+          "entryPoints": []
+        },
+        "hasReadme": true,
+        "hasTests": false,
+        "hasCI": false,
+        "hasDocumentation": false,
+        "hasDeployedDemo": null,
+        "keyFiles": [],
+        "latestCommitSha": "48348222ff35080945c5c2363c5e557e00d9d587"
+      },
+      "scores": {
+        "problem": {
+          "score": 4,
+          "confidence": "high",
+          "reasoning": "LivePasv addresses a real and significant financial problem - the challenge of visualizing and understanding passive income streams in real-time. Many people struggle to track and comprehend their investment returns, dividends, and passive income sources effectively. The problem is well-defined and affects a substantial number of people managing investments and seeking financial independence through passive income. This is particularly relevant in today's investment climate where passive income strategies are increasingly popular.",
+          "evidence": []
+        },
+        "solution": {
+          "score": 3,
+          "confidence": "high",
+          "reasoning": "The solution takes a solid approach by providing real-time visualization of passive income with granular time breakdowns (daily, weekly, monthly, yearly). The mathematical model is well-thought-out, calculating compound growth over time with configurable parameters. The use of URL-based configuration is clever for sharing scenarios. However, the solution lacks some innovative elements like data persistence, integration with actual financial APIs, or advanced analytics features that would set it apart from existing portfolio trackers.",
+          "evidence": []
+        },
+        "execution": {
+          "score": 4,
+          "confidence": "high",
+          "reasoning": "The technical execution is impressive for a hackathon project. The JavaScript code is well-structured with proper class organization (PasvCalc, TimeBasedRNG, UI), comprehensive mathematical calculations, and clean separation of concerns. The UI is polished using Bulma CSS framework with responsive design, proper accessibility considerations, and smooth real-time updates. The configuration system via URL parameters is sophisticated, and the code includes proper error handling. The git history shows iterative development with meaningful commits. Only minor issues like lack of input validation and limited error scenarios prevent a perfect score.",
+          "evidence": []
+        }
+      },
+      "aggregates": {
+        "totalScore": 11,
+        "maxPossible": 15,
+        "overallConfidence": "high"
+      },
+      "highlights": [
+        {
+          "type": "file",
+          "description": "Sophisticated mathematical model for compound passive income calculations with precise time-based breakdowns",
+          "filePath": "index.html",
+          "significance": "high"
+        },
+        {
+          "type": "file",
+          "description": "Clean, well-organized JavaScript architecture with proper separation of concerns across PasvCalc, TimeBasedRNG, and UI classes",
+          "filePath": "index.html",
+          "significance": "high"
+        },
+        {
+          "type": "file",
+          "description": "Innovative URL-parameter based configuration system allowing easy sharing and customization of financial scenarios",
+          "filePath": "index.html",
+          "significance": "medium"
+        },
+        {
+          "type": "file",
+          "description": "Polished responsive UI with real-time updates and smooth visual experience using Bulma framework",
+          "filePath": "index.html",
+          "significance": "medium"
+        }
+      ],
+      "concerns": [
+        {
+          "type": "pattern",
+          "description": "No input validation or sanitization for URL parameters, potentially allowing malicious inputs",
+          "filePath": "index.html",
+          "significance": "medium"
+        },
+        {
+          "type": "pattern",
+          "description": "Limited error handling and user feedback for edge cases or invalid configurations",
+          "filePath": "index.html",
+          "significance": "low"
+        },
+        {
+          "type": "pattern",
+          "description": "No data persistence - all configuration is lost when URL changes, limiting practical use",
+          "filePath": "index.html",
+          "significance": "medium"
+        }
+      ],
+      "suggestions": [],
+      "commentary": {
+        "hypeMessage": "LivePasv delivers a mathematically sophisticated and beautifully designed passive income visualizer that turns complex financial calculations into mesmerizing real-time displays! 💹",
+        "technicalSummary": "LivePasv is a client-side JavaScript application that calculates and visualizes passive income in real-time using compound interest mathematics. Built with vanilla JavaScript and Bulma CSS, it features sophisticated time-based calculations, URL-parameter configuration, and responsive design with smooth real-time updates.",
+        "judgeFeedback": "Great work on creating a polished, mathematically sound passive income visualizer! Your implementation shows excellent software engineering practices with clean code organization and comprehensive calculations. The real-time updates and granular time breakdowns create an engaging user experience. To take this further, consider adding data persistence, integration with real financial APIs, comparison tools between different investment scenarios, and perhaps gamification elements to make financial planning more engaging. The foundation you've built is solid and could evolve into a powerful financial planning tool."
+      }
+    },
+    "analysisMethod": "agent",
+    "lastCommitSha": "48348222ff35080945c5c2363c5e557e00d9d587",
+    "calibratedAt": "2026-01-22T14:46:23.824Z",
+    "currentRank": 1
+  },
+  {
+    "teamId": "smart-pocket",
+    "teamName": "SmartPocket",
+    "repo": "https://github.com/Alpharages/SmartPocket",
+    "track": 1,
+    "problem": 4,
+    "solution": 4,
+    "execution": 3,
+    "total": 11,
+    "linesOfCode": 3104,
+    "commentary": "SmartPocket is revolutionizing personal finance by putting users back in control of their data while delivering AI-powered insights that work anywhere, anytime - even without internet!",
+    "lastUpdated": "2026-01-22T14:46:18.494Z",
+    "assessment": {
+      "meta": {
+        "teamId": "smart-pocket",
+        "teamName": "SmartPocket",
+        "repoUrl": "https://github.com/Alpharages/SmartPocket",
+        "track": 1,
+        "assessmentVersion": "1.0.0",
+        "assessedAt": "2026-01-22T14:46:18.494Z",
+        "durationMs": 0
+      },
+      "discovery": {
+        "totalFiles": 0,
+        "codeFiles": 0,
+        "estimatedLinesOfCode": 3104,
+        "techStack": {
+          "languages": [],
+          "frameworks": [],
+          "databases": [],
+          "infrastructure": [],
+          "aiIntegrations": []
+        },
+        "projectStructure": {
+          "hasMonorepo": false,
+          "mainDirectories": [],
+          "entryPoints": []
+        },
+        "hasReadme": true,
+        "hasTests": false,
+        "hasCI": false,
+        "hasDocumentation": false,
+        "hasDeployedDemo": null,
+        "keyFiles": [],
+        "latestCommitSha": ""
+      },
+      "scores": {
+        "problem": {
+          "score": 4,
+          "confidence": "medium",
+          "reasoning": "Based on simple analysis",
+          "evidence": []
+        },
+        "solution": {
+          "score": 4,
+          "confidence": "medium",
+          "reasoning": "Based on simple analysis",
+          "evidence": []
+        },
+        "execution": {
+          "score": 3,
+          "confidence": "medium",
+          "reasoning": "Based on simple analysis",
+          "evidence": []
+        }
+      },
+      "aggregates": {
+        "totalScore": 11,
+        "maxPossible": 15,
+        "overallConfidence": "medium"
+      },
+      "highlights": [],
+      "concerns": [],
+      "suggestions": [],
+      "commentary": {
+        "hypeMessage": "SmartPocket is revolutionizing personal finance by putting users back in control of their data while delivering AI-powered insights that work anywhere, anytime - even without internet!",
+        "technicalSummary": "Simple analysis completed.",
+        "judgeFeedback": "Keep building!"
+      }
+    },
+    "analysisMethod": "agent",
+    "lastCommitSha": "",
+    "calibratedAt": "2026-01-22T14:46:23.824Z",
+    "currentRank": 2
+  },
+  {
+    "teamId": "irecall",
+    "teamName": "iRecall",
+    "repo": "https://github.com/akshaykhanna99/dimentia_ai_assistant",
+    "track": 2,
+    "problem": 4.3,
+    "solution": 3.8,
+    "execution": 2.7,
+    "total": 10.8,
+    "linesOfCode": 8664,
+    "commentary": "Ambitious project tackling a critical underserved need but appears to have bitten off more than they could chew in execution.",
+    "pros": [
+      "Addresses genuinely underserved dementia/cognitive assistance market with clear real-world impact",
+      "Shows deep understanding of user needs with hesitation detection and minimal prompting approach",
+      "Comprehensive architecture combining computer vision, state machines, and multi-modal guidance"
+    ],
+    "cons": [
+      "Execution appears incomplete - main.py cuts off mid-function suggesting unfinished implementation",
+      "Over-engineered for hackathon timeframe with iOS ARKit integration that may not be fully functional",
+      "No evidence of actual user testing or validation with target demographic"
+    ],
+    "suggestions": [
+      "Focus on core functionality first - get basic task guidance working before adding ARKit complexity",
+      "Implement simple webcam-based demo that actually runs end-to-end for the hackathon",
+      "Add basic accessibility features like larger text, high contrast modes, and simplified UI for elderly users"
+    ],
+    "lastUpdated": "2026-01-25T13:04:20.898Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@ak_shay99"
+    ],
+    "members": [
+      "Akshay Khanna"
+    ]
+  },
+  {
+    "teamId": "agentlint",
+    "teamName": "AgentLint",
+    "repo": "https://github.com/augmented-os/nucleus",
+    "track": 1,
+    "problem": 2.8,
+    "solution": 3.2,
+    "execution": 4.1,
+    "total": 10.1,
+    "linesOfCode": 93178,
+    "commentary": "Impressive technical execution but completely misses the mark on the track's financial focus.",
+    "pros": [
+      "Massive codebase with sophisticated technical architecture using modern tools",
+      "Complex multi-tenant system with real-time features and workflow orchestration",
+      "Strong execution with working components and proper project structure"
+    ],
+    "cons": [
+      "Problem statement is vague and doesn't clearly address high-stakes financial decisions",
+      "Overly complex solution that seems more like a general dev tool than financial advisor solution",
+      "Unclear value proposition for the target track - more about coding workflows than financial decisions"
+    ],
+    "suggestions": [
+      "Pivot to focus specifically on financial advisor workflows and compliance",
+      "Simplify the value proposition to clearly solve one financial decision problem",
+      "Create a demo that shows financial advisors making better investment decisions"
+    ],
+    "lastUpdated": "2026-01-25T13:04:20.898Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@AIAugmented"
+    ],
+    "members": []
+  },
+  {
+    "teamId": "atlas-loa",
+    "teamName": "ATLAS-LOA",
+    "repo": "https://github.com/krish-parikh/ATLAS-LOA",
+    "track": 1,
+    "problem": 4,
+    "solution": 3.3,
+    "execution": 2.7,
+    "total": 10,
+    "linesOfCode": 9809,
+    "commentary": "Solid foundation but needs significant development to compete with more complete solutions.",
+    "pros": [
+      "Tackles the same valid LOA problem space with good understanding",
+      "Clean Next.js architecture with proper database setup",
+      "Good UI structure for managing providers and clients"
+    ],
+    "cons": [
+      "No README documentation to understand the project scope",
+      "Limited backend functionality despite Python files present",
+      "Appears to be early-stage with basic CRUD operations only"
+    ],
+    "suggestions": [
+      "Add comprehensive README explaining the unique value proposition vs competitors",
+      "Implement the AI extraction and email automation features mentioned in code",
+      "Build working demos of the core LOA processing workflow"
+    ],
+    "lastUpdated": "2026-01-25T13:04:20.898Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@kparikh05"
+    ],
+    "members": [
+      "Krish Parikh"
+    ],
+    "image": "/IMG_20260124_154918.jpg"
+  },
+  {
+    "teamId": "clinix",
+    "teamName": "Clinix",
+    "repo": "https://github.com/mirzaalihussain2/saturn-fe",
+    "track": 2,
+    "problem": 3.5,
+    "solution": 2.8,
+    "execution": 2.5,
+    "total": 8.8,
+    "linesOfCode": 2296,
+    "commentary": "A nice technical demo that misses the mark on understanding real medical workflow needs and compliance requirements.",
+    "pros": [
+      "Addresses a legitimate gap in medical documentation workflows for video analysis",
+      "Clean, modern UI implementation with good technical foundation (Next.js, Supabase)"
+    ],
+    "cons": [
+      "Problem scope is quite narrow - limited to medical professionals doing endoscopy, not a broadly underserved population",
+      "Solution lacks clear innovation beyond basic video annotation tools that already exist",
+      "Missing key medical workflow features like DICOM compliance, patient privacy controls, or integration with medical records systems",
+      "No evidence of actual medical professional input in design - critical for healthcare tools"
+    ],
+    "suggestions": [
+      "Conduct user research with actual medical professionals to validate the workflow and identify real pain points",
+      "Add medical-grade features like HIPAA compliance, patient data encryption, and integration with existing medical systems",
+      "Expand scope to address broader medical documentation needs across multiple specialties"
+    ],
+    "lastUpdated": "2026-01-25T10:49:46.187Z",
+    "analysisMethod": "local-critical",
+    "twitter": [],
+    "members": [
+      "Maryam"
+    ]
+  },
+  {
+    "teamId": "facile",
+    "teamName": "Facile",
+    "repo": "https://github.com/danny-1k/facile",
+    "track": 1,
+    "problem": 3.5,
+    "solution": 2.8,
+    "execution": 2.1,
+    "total": 8.4,
+    "linesOfCode": 459,
+    "commentary": "Interesting academic concept but feels more like a research project than a usable tool for real financial decisions.",
+    "pros": [
+      "Interesting concept of regime-awareness for investment decisions has academic merit",
+      "Focused approach rather than trying to solve everything at once"
+    ],
+    "cons": [
+      "No user interface, API, or way for actual users to interact with the system",
+      "Unclear how this differs from existing market regime analysis tools already used by institutional investors",
+      "Minimal code output suggests incomplete implementation"
+    ],
+    "suggestions": [
+      "Build a simple web interface where users can input current market conditions and get regime analysis",
+      "Demonstrate clear differentiation from existing regime detection tools with specific use cases",
+      "Show actual working examples with real market data and predictions"
+    ],
+    "lastUpdated": "2026-01-25T10:49:46.187Z",
+    "analysisMethod": "local-critical",
+    "twitter": [],
+    "members": []
+  },
+  {
+    "teamId": "boon",
+    "teamName": "Boon",
+    "repo": "https://github.com/philippbogdan/boon",
+    "track": 1,
+    "problem": 2.1,
+    "solution": 2.3,
+    "execution": 1.8,
+    "total": 6.2,
+    "linesOfCode": 7338,
+    "commentary": "Underdeveloped project with unclear value proposition and insufficient implementation to evaluate properly.",
+    "pros": [
+      "Attempts to address fact-finding process which is important for advisers",
+      "Uses modern AI agent architecture with Claude integration"
+    ],
+    "cons": [
+      "No clear README or documentation explaining what the solution actually does",
+      "Incomplete implementation with minimal working functionality visible",
+      "Problem definition is vague and solution approach unclear from available code"
+    ],
+    "suggestions": [
+      "Create comprehensive documentation explaining the value proposition and features",
+      "Build a working demo that clearly demonstrates the core functionality",
+      "Define specific use cases and user workflows the tool is meant to address"
+    ],
+    "lastUpdated": "2026-01-25T10:41:07.185Z",
+    "analysisMethod": "local-critical",
+    "twitter": [
+      "@philbog"
+    ],
+    "members": [
+      "Philipp Bogdan"
+    ],
+    "image": "/IMG_4428.jpg"
+  },
+  {
+    "teamId": "cashflow-forecaster",
+    "teamName": "CashFlow Forecaster",
+    "repo": "https://github.com/omarqouqas/cashflowforecaster",
+    "track": 1,
+    "problem": 0,
+    "solution": 0,
+    "execution": 0,
+    "total": 0,
+    "linesOfCode": 0,
+    "commentary": "Waiting for CashFlow Forecaster to push their first commit!",
+    "lastUpdated": "2026-01-22T14:44:36.328Z",
+    "assessment": {
+      "meta": {
+        "teamId": "cashflow-forecaster",
+        "teamName": "CashFlow Forecaster",
+        "repoUrl": "https://github.com/omarqouqas/cashflowforecaster",
+        "track": 1,
+        "assessmentVersion": "3.0.0",
+        "assessedAt": "2026-01-22T14:44:36.328Z",
+        "durationMs": 9511
+      },
+      "discovery": {
+        "totalFiles": 0,
+        "codeFiles": 0,
+        "estimatedLinesOfCode": 0,
+        "techStack": {
+          "languages": [],
+          "frameworks": [],
+          "databases": [],
+          "infrastructure": [],
+          "aiIntegrations": []
+        },
+        "projectStructure": {
+          "hasMonorepo": false,
+          "mainDirectories": [],
+          "entryPoints": []
+        },
+        "hasReadme": false,
+        "hasTests": false,
+        "hasCI": false,
+        "hasDocumentation": false,
+        "hasDeployedDemo": null,
+        "keyFiles": [],
+        "latestCommitSha": ""
+      },
+      "scores": {
+        "problem": {
+          "score": 0,
+          "confidence": "very_low",
+          "reasoning": "Unable to analyze repository",
+          "evidence": []
+        },
+        "solution": {
+          "score": 0,
+          "confidence": "very_low",
+          "reasoning": "Unable to analyze repository",
+          "evidence": []
+        },
+        "execution": {
+          "score": 0,
+          "confidence": "very_low",
+          "reasoning": "Unable to analyze repository",
+          "evidence": []
+        }
+      },
+      "aggregates": {
+        "totalScore": 0,
+        "maxPossible": 15,
+        "overallConfidence": "very_low"
+      },
+      "highlights": [],
+      "concerns": [],
+      "suggestions": [],
+      "commentary": {
+        "hypeMessage": "Waiting for CashFlow Forecaster to push their first commit!",
+        "technicalSummary": "Repository not available for analysis.",
+        "judgeFeedback": "Please ensure your repository is public and has commits."
+      }
+    },
+    "analysisMethod": "agent",
+    "lastCommitSha": "",
+    "calibratedAt": "2026-01-22T14:46:23.824Z",
+    "currentRank": 3
+  }
+]
